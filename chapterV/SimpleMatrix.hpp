@@ -6,7 +6,7 @@
 template <typename Type = double> class SimpleMatrix{
     
     private:
-        vector<vector<Type> > mat; // vector of vectors
+        vector<vector<Type>> mat; // vector of vectors
 
     public:
         SimpleMatrix(); // Default constructor
@@ -24,7 +24,7 @@ template <typename Type = double> class SimpleMatrix{
 
         // Access to the matrix values via rows and columns
 
-        vector<vector<Type>> get_mat() const;
+        SimpleMatrix<Type> get_mat() const;
 
         Type& value(const int& row, const int& column) const;
 };
